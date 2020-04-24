@@ -165,16 +165,16 @@ def statistics():
         print("\n")
     elif name.lower() in data:
         print("Putting Averages")
-        print("10 Feet: " + str(data[name.lower()]['total_made']["10'"] / data[name.lower()]['total_attempts']["10'"] *
-                                100) + "%")
-        print("15 Feet: " + str(data[name.lower()]['total_made']["15'"] / data[name.lower()]['total_attempts']["15'"] *
-                                100) + "%")
-        print("20 Feet: " + str(data[name.lower()]['total_made']["20'"] / data[name.lower()]['total_attempts']["20'"] *
-                                100) + "%")
-        print("25 Feet: " + str(data[name.lower()]['total_made']["25'"] / data[name.lower()]['total_attempts']["25'"] *
-                                100) + "%")
-        print("30 Feet: " + str(data[name.lower()]['total_made']["30'"] / data[name.lower()]['total_attempts']["30'"] *
-                                100) + "%\n")
+        print("10 Feet: " + str(round(data[name.lower()]['total_made']["10'"] / data[name.lower()]['total_attempts']["10'"] *
+                                100, 1)) + "%")
+        print("15 Feet: " + str(round(data[name.lower()]['total_made']["15'"] / data[name.lower()]['total_attempts']["15'"] *
+                                100, 1)) + "%")
+        print("20 Feet: " + str(round(data[name.lower()]['total_made']["20'"] / data[name.lower()]['total_attempts']["20'"] *
+                                100, 1)) + "%")
+        print("25 Feet: " + str(round(data[name.lower()]['total_made']["25'"] / data[name.lower()]['total_attempts']["25'"] *
+                                100, 1)) + "%")
+        print("30 Feet: " + str(round(data[name.lower()]['total_made']["30'"] / data[name.lower()]['total_attempts']["30'"] *
+                                100, 1)) + "%\n")
         print("\n")
     else:
         print("That name does not exist!\n")
